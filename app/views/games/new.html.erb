@@ -1,0 +1,10 @@
+<div><h1>New Game!</h1></div>
+<% @letters.each do |letter| %>
+  <div class="btn btn-primary active" aria-pressed="true" style="pointer-events: none"> <%= letter %> </div>
+<% end %>
+<p>What is the longest word you can find?</p>
+<form action="/score" method="post">
+  <input type="text" name="answer">
+  <input type="submit" value="try">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</form>

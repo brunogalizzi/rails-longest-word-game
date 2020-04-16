@@ -1,0 +1,16 @@
+// Place all the styles related to the games controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+h1 {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+  display: inline;
+  position: relative;
+  font: 200px Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  font-size: 80px !important;
+}
+
+h1:after {
+  position: absolute; left: 10px; top: 5px;
+}
