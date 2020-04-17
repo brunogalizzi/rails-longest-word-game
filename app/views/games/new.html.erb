@@ -1,4 +1,4 @@
-<div><h1>New Game!</h1></div>
+<div class="container text-center"><div><h1>New Game!</h1></div>
 <% @letters.each do |letter| %>
   <div class="btn btn-primary active" aria-pressed="true" style="pointer-events: none"> <%= letter %> </div>
 <% end %>
@@ -8,3 +8,4 @@
   <input type="submit" value="try">
   <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 </form>
+</div>
